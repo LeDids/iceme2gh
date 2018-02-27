@@ -66,8 +66,48 @@
       <img src="images/Gelateria.jpg" alt="back screen" width=50 class="square">
       <h1>DEGUSTEZ UNE GLACE MAINTENANT</h1>
       <h2>Maintenant, tout de suite bien sur !</h2>
-      <button type="button" class="btn btn-primary">Commandez</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#OrderForm">
+  Commandez
+</button>
     </div>    
+    
+    <div class="modal fade" id="OrderForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Formulaire de Commande</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="spacer" width=10 > </div>
+          </div>
+          <div class="modal-body">
+            <div id="wufoo-s1ojzkk41lvdvta">
+              Fill out my <a href="https://protechtium.wufoo.com/forms/s1ojzkk41lvdvta">online form</a>.
+              </div>
+              <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>
+              <script type="text/javascript">var s1ojzkk41lvdvta;(function(d, t) {
+              var s = d.createElement(t), options = {
+              'userName':'protechtium',
+              'formHash':'s1ojzkk41lvdvta',
+              'autoResize':true,
+              'height':'526',
+              'async':true,
+              'host':'wufoo.com',
+              'header':'show',
+              'ssl':true};
+              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+              s.onload = s.onreadystatechange = function() {
+              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+              try { s1ojzkk41lvdvta = new WufooForm();s1ojzkk41lvdvta.initialize(options);s1ojzkk41lvdvta.display(); } catch (e) {}};
+              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+              })(document, 'script');</script>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
     
     <div class="spacer"></div>
 
