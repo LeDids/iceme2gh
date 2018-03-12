@@ -45,8 +45,8 @@ body {
 	padding-bottom: 1em;
 }
 
-.spacer{
-	height: 8em;
+.vertical-spacer{
+	height: 6em;
 }
 .choix p {
 	letter-spacing: 1px;
